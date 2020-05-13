@@ -1,0 +1,24 @@
+-- This is a comment
+
+[meta]  -- A '[<str>]' defines a header.
+?Name:"TestAi"  -- a '?' followed by a string, and then ':' and some data denotes a data object.
+?MetaInt:38  -- Just with other languages, quotes signify strings, and no quotes signify ints.
+?MetaPlatformSpecific:*game.ServerScriptService  -- Platform specific datas should be started with an '*'.
+[/]  -- This Ends a header
+
+
+[data]  -- The Data header is required.
+?thingy:10;?thingy2:20  -- Data objects can be seperated by semicolons.
+[/]  -- Omitting a header end will break the converter.
+
+
+<platform:test>  -- Platform headers are defined by angle brackets. This is platform specific data. String after the ':' specifies platform.
+?randomdata:19  -- Data inside platform headers are typically used for the specific platform.
+</>  -- This ends a platform header.
+
+
+-- Also, spacing recomendations are not required, but should be enforced:
+--    Comments should be two spaces away from a line of code.
+--    There should be a two line gap between a header end and the next line of code, including comments.
+--
+-- Comments are not guarenteed to be carried over through conversion.
