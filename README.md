@@ -4,12 +4,12 @@
 ---
 
 ## Syntax
-`--` Creates a comment.
-`[(name)]` Defines a normal header.
-`<platform:(name)>` Defines a platform-specific header.
-`[/]` Ends a normal header.
-`</>` Ends a platform-specific header.
-`?(name):(value)` Sets a variable inside a header.
+`--` Creates a comment.  
+`[(name)]` Defines a normal header.  
+`<platform:(name)>` Defines a platform-specific header.  
+`[/]` Ends a normal header.  
+`</>` Ends a platform-specific header.  
+`?(name):(value)` Sets a variable inside a header.  
 
 ## Styling recomendations
 - Comments should be at least two spaces away from a line of code.
